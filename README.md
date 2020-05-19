@@ -3,6 +3,7 @@
 ### 1.1 Background
 One of the most popular meal in the world. Someone says that it comes from Turkey, others from Italy. Pizza has radically changed the world, in particular in Naples, the city considered as the birthplace of that disc of dough with tomato souce, mozarella and fresh basil. In the [Wikipedia Pizza page](https://en.wikipedia.org/wiki/Pizza) it can be found a fully description on the history, ingredients and way of cooking. Furthermore, many variants are present, like neapolitan or roman style.  
 In this project we want to give an overview of the different borough of Naples, and analyze the optimal place for opening a new pizzeria. We will see that same area of Napoli are full of pizzeria, and so a detailed analysis is needed. Furthermore, we will analyze insight from top pizzeria in Napoli, for example if they have public facebook, instagram page and so on. We all now that nowadays, the success of a venue is partially done to how much it is invested in marketing, and so sponsorizing what you do and your products is the key.
+
 <center><img src="https://i0.wp.com/www.napolimilionaria.it/wp-content/uploads/2020/01/ricetta-pizza-sorbillo-impasto-margherita-napoeltana.jpg"></center>
 <center>Pizza margherita in its beautiness.</center>
 
