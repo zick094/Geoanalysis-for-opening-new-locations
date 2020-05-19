@@ -6,8 +6,11 @@ In this project we want to give an overview of the different borough of Naples, 
 
 <p align="center">
 <img src="https://i0.wp.com/www.napolimilionaria.it/wp-content/uploads/2020/01/ricetta-pizza-sorbillo-impasto-margherita-napoeltana.jpg">
-<center>Pizza margherita in its beautiness.</center>
 </p>
+<p align="center">
+Pizza margherita in its beautiness.
+</p>
+
 
 ## 2. Data, resources and methodologies
 ### 2.1 Data
