@@ -15,7 +15,7 @@ Lets now talk about the city of Naples. Accordingly to Wikipedia, Naples is the 
 
 
 <p align="center">
-<img src=/home/lucar/Pictures/borough.png>
+<img src=Pics/borough.png>
 </p>
 
 
@@ -28,14 +28,14 @@ Data that will be used in the analysis come from  different sources.
 - **demographical information**: number of residents per borough are scraped from Wikipedia (link [here](https://it.wikipedia.org/wiki/Municipalit%C3%A0_di_Napoli)) using the same function shown above;
 
 <p align="center">
-<img src=/home/lucar/Pictures/popq.png>
+<img src=Pics/popq.png>
 </p>
 
 - **borough boundaries**: zip file from the official website of Naples townhall is downloaded, containing the data of borough's boundaries (link [here](http://www.comune.napoli.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/29771)). Since downloaded format is not ready-to-use, it is performed a little of data manipulation using `geopandas` library;  
 
 - **venues**: this project provides the use of Foursquare API (some details [here](https://developer.foursquare.com/)) for obtaining all venues in the city of Naples, and in particular pizzerias. We will use different APIs for getting venues and details (rating, social page, number of tips etc.);
 
-![image](/home/lucar/Pictures/choro_map_pizzeria.png)
+![image](Pics/choro_map_pizzeria.png)
 
 <p align="center">
 A choroplet map based on population. In red, pizzeria venues.
@@ -79,14 +79,14 @@ Many resources have been used in order to scrape, download and do data manipulat
 In this phase some EDA has been performed. For example, here are the first five boroughs for number of pizzeria:
 
 <p align="center">
-<img src=/home/lucar/Pictures/top5.png>
+<img src=Pics/top5.png>
 </p>
 
 Clearly it has to be considered also the number of residents and the dimension of the boroughs.  
 Having a look on the top 3 venue list for each borough, here's what we obtain:
 
 <p align="center">
-<img src=/home/lucar/Pictures/venue_barplot.png>
+<img src=Pics/venue_barplot.png>
 </p>
 
 As we can see, pizzeria are very frequent (in 24 boroughs on 30, the pizzeria is in the list of top 3 most frequent venue).  
@@ -94,14 +94,14 @@ As we can see, pizzeria are very frequent (in 24 boroughs on 30, the pizzeria is
 Looking for top 5 pizzeria based on their rating ranking, this is what you get:
 
 <p align="center">
-<img src=/home/lucar/Pictures/top5_pizzeria.png>
+<img src=Pics/top5_pizzeria.png>
 </p>
 
 ### 3.2 Data preparation and feature engineering
 The data used for train the model are obtained pivoting the nearby dataframe, that contains venues near each pizzeria. So the data are grouped counting on each pizzeria how many venue of a specific category have been found in a neighborhood of 500 meters.
 
 <p align="center">
-<img src=/home/lucar/Pictures/pivot.png>
+<img src=Pics/pivot.png>
 </p>
 
 For example, the venue in the third row has 3 bar in its neighborhood. The algorithm will clusterize pizzeria based on what there is in their neighborhood.
