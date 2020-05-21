@@ -110,4 +110,45 @@ For example, the venue in the third row has 3 bar in its neighborhood. The algor
 
 ### 3.3 Clustering
 For detecting the best place where opening a new pizzeria, we use k-means algorithm, that is a clustering distance-based method that will help to clusterize similar places.  
-K-means algorithm creates sphere-like clusters, minimizing dissimilarity between them. Since the number of clusters (k) is unknown, the algorithm will be trained with different k and evaluation will be performed using both elbow and silhouette methods.
+K-means algorithm creates sphere-like clusters, minimizing dissimilarity between them. Since the number of clusters (k) is unknown, the algorithm is trained with different k and evaluation is be performed using both elbow and silhouette methods.
+
+<p align="center">
+<img src=Pics/elbsil.png>
+</p>
+
+As it is possible to see, it is difficult to apply elbow method, since there isn't a distinct k where the distortion curve shows a rapid change. Using silhouette method, we are going to choose k = 9, since it is maximizing the similarity between clusters and their points.  
+After clusterized, we can see the boxplot of clusters on rating score.
+
+<p align="center">
+<img src=Pics/box.png>
+</p>
+
+Taking the median as the measure of clusters, we can clearly see that cluster 5 has the highest value.
+
+<p align="center">
+<img src=Pics/rank.png>
+</p>
+
+Lets plot everything on a map.
+
+
+<p align="center">
+<img src=Pics/map_train.png>
+</p>
+
+The area with the highest score is Montecalvario (cluter 5).
+
+
+### 3.4 Prediction
+We are now going to predict values from the trained model. Data points will be sampled from each borough, and venues in their neighborhood will be retrieved using Foursquare. We are going to predict if there are similar area to the one with the highest score.
+
+<p align="center">
+<img src=Pics/map_test.png>
+</p>
+
+There are lots of area similar to Montecalvario, in terms of venues.
+
+
+## 4. Conclusion
+With this report, we analyzed the venues in the city of Naples and found the optimal area where to open a new pizzeria. We have done this analysing the similarity between the different pizzeria in terms of nearby venues, clusterizing them and calculating the median rating score.  
+A weak point in this analysis is the use of Foursquare API. We all know that, nowadays, one of the most used app for tips and ratings is Tripadvisor, that unfortunately cannot be use for non-commercial use. But with this study, we give an idea of what can be done with machine learning, even find a place where open a new pizzeria. This can be generalized for opening bar, pub and also restaurants.
